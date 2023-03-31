@@ -618,7 +618,6 @@ transition-property: fill;
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    margin-bottom: 26px;
     padding-left: 38px;
     outline: transparent;
     padding-top: 11px;
@@ -653,7 +652,6 @@ border-color: var(--brand-color);
     display: flex;
     gap: 8px;
     align-items: center;
-    margin-bottom: 24px;
 }
 .modal-checkbox-input .checkbox-span {
     display: flex;
@@ -672,7 +670,7 @@ border-color: var(--brand-color);
 }
 .modal-button {
 display: block;
-margin: 0 auto;
+margin: 24px auto 0 auto;
 background-color: var(--brand-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-weight: 500;
@@ -682,8 +680,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 color: var(--fifth-color);
 border: none;
 border-radius: 4px;
-width: 169px;
-height: 56px;
+min-width: 169px;
+min-height: 56px;
 transition-property: background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -701,24 +699,35 @@ color: var(--fifth-color);
 }
 .modal-icon {
     position: absolute;
+    top: 50%;
     left: 16px;
-    top: 11px;
+    transform: translateY(-50%);
 }
 .modal-input:focus + .modal-icon {
     fill: var(--brand-color);
 }
 .modal-label-text {
-        font-weight: 400;
+    display: inline-block;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: var(--border-color);
-       
+        margin-bottom: 4px;   
+}
+.modal-label-text-margin {
+    margin-top: 8px;
+}
+.modal-termins {
+                font-size: 12px;
+                line-height: 1.17;
+                letter-spacing: 0.04em;
+                color: var(--border-color);
 }
 .footer-container {
     display: flex;
+    align-items: center;
 }
-.footer-soc-box {
+.wrap {
     margin-right: 80px;
 }
 .subscribe-form-title {
@@ -732,7 +741,6 @@ color: var(--fifth-color);
 .subscribe-form-input {
     width: 264px;
     height: 40px;
-    margin-right: 24px;
     outline: transparent;
     background: transparent;
 border: 1px solid #FFFFFF;
@@ -755,9 +763,10 @@ border: 1px solid #FFFFFF;
         color: var(--fifth-color);
 }
 .subscribe-form-btn {
+    padding: 0;
     display: flex;
-    width: 165px;
-    height: 40px;
+    min-width: 165px;
+    min-height: 40px;
     background-color: var(--brand-color);
         border-radius: 4px;
         border: none;
@@ -783,7 +792,9 @@ display: flex;
 .subscribe-form-btn:hover {
 background-color: var(--fourth-color);
 }
-
+.email-input-wrap {
+    margin-right: 24px;
+}
 
 
 
